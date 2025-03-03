@@ -134,3 +134,4 @@ C:\Users\Frank Batista\source\repos\PruebaTecnica2\PruebaTecnica2\obj\Debug\net8
 C:\Users\Frank Batista\source\repos\PruebaTecnica2\PruebaTecnica2\obj\Debug\net8.0\PruebaTecnica2.pdb
 C:\Users\Frank Batista\source\repos\PruebaTecnica2\PruebaTecnica2\obj\Debug\net8.0\PruebaTecnica2.genruntimeconfig.cache
 C:\Users\Frank Batista\source\repos\PruebaTecnica2\PruebaTecnica2\obj\Debug\net8.0\ref\PruebaTecnica2.dll
+C:\Users\Frank Batista\source\repos\PruebaTecnica2\PruebaTecnica2\obj\Debug\net8.0\PruebaTecnica2.sourcelink.json
