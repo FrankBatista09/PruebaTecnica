@@ -4,12 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1 class="text-center">List of Products</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class='btn btn-primary'>Create New</a>
 </p>
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -34,7 +34,7 @@
                 @Html.DisplayFor(modelItem => item.ProductoID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
+                @Html.ActionLink(item.Nombre, "Details", new { id = item.ProductoID }, new { @class = "btn btn-link"} ) 
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
@@ -43,9 +43,8 @@
                 @Html.DisplayFor(modelItem => item.FechaCreacion)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ProductoID  }) |
-                @Html.ActionLink("Details", "Details", new {  id=item.ProductoID }) |
-                @Html.ActionLink("Delete", "Delete", new {  id=item.ProductoID  })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProductoID }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProductoID }, new { @class = "btn btn-danger" })
             </td>
         </tr>
 }

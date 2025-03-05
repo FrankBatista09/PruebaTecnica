@@ -63,7 +63,7 @@ namespace PruebaTecnica2.Controllers
             prod.Nombre = updatedProd.Nombre;
             prod.Price = updatedProd.Price;
 
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return Ok();
         }
@@ -77,7 +77,7 @@ namespace PruebaTecnica2.Controllers
                 return NotFound("Product not found");
 
             _context.productos.Remove(prod);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return Ok();
         }

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using PruebaTecnicaFE.Models;
+using System.Net.Http.Headers;
 using System.Text;
 
 namespace PruebaTecnicaFE.Services
@@ -15,6 +16,11 @@ namespace PruebaTecnicaFE.Services
         {
             _client = client;
             _logger = logger;
+
+            _client.DefaultRequestHeaders.CacheControl = new CacheControlHeaderValue
+            {
+                NoCache = true
+            };
         }
 
         public async Task<List<ProductModel>> GetAll()
